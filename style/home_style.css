@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+h2, h3, p {
+    text-align: left;
+}
+
+button {
+    border-radius: 25px;
+    background-color: darkgray;
+}
+button:hover {
+    background-color: lightgray;
+}
+button:active {
+    background-color: gray;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.homeAnim {
+    transform-origin: 50% 50%;
+    
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes anim{
+    0%{transform: scale(1, 1);}
+    50%{transform: scale(1.2, 1.2);}
+    100%{transform: scale(1, 1);}
+}
